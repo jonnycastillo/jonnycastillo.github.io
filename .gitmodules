@@ -1,0 +1,3 @@
+[submodule "themes/isabella"]
+	path = themes/isabella
+	url = https://github.com/gurusabarish/hugo-profile.git
