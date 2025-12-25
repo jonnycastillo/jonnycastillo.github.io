@@ -64,7 +64,8 @@ Menus:
     #   weight: 2
 
 params:
-  googleTagManager: "GTM-WP8T2VS4"
+  enableGTM: true
+  gtmID: "GTM-WP8T2VS4"
   title: "Hugo Profile"
   description: Text about my cool site
   # staticPath: ""  # The path to serve the static files from
