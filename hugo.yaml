@@ -133,7 +133,7 @@ params:
       disableAbout: false
       disableExperience: false
       disableEducation: false
-      disableProjects: false
+      disableProjects: true
       disableAchievements: false
       disableContact: true
 
@@ -143,7 +143,7 @@ params:
     intro: "Hi, my name is"
     title: "Nicole."
     subtitle: "I am a Licensed Marriage and Family Therapist"
-    content: "I offer online therapy for adults in their 20s and 30s.<br><br>Ready to untangle old patterns and find your peace?"
+    content: "I offer online therapy for adults in their 20s and 30s.<br>Ready to untangle old patterns and find your peace?"
     image: /images/hero.jpeg
     bottomImage:
       enable: true
@@ -335,42 +335,70 @@ params:
   # projects
   projects:
     enable: true
-    title: "Publications"
+    title: "A Roadmap To Feeling Better"
     items:
-      - title: Hugo Profile
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
-        image: /images/projects/profile.png
-        featured:
-          name: Demo
-          link: https://hugo-profile.netlify.app
-        badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+      # - title: Let's Connect
+      #   content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
+      #   image: /images/projects/profile.png
+      #   featured:
+      #     name: Demo
+      #     link: https://hugo-profile.netlify.app
+      #   badges:
+      #     - "Hugo"
+      #     - "Bootstrap"
+      #     - "Javascript"
+      #   links:
+      #     - icon: fa fa-envelope
+      #       url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+      #     - icon: fab fa-github
+      #       url: https://github.com/gurusabarish/hugo-profile
+      #     - icon: fab fa-twitter
+      #       url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
-        featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
-        badges:
-          - "Django"
-          - "Bootstrap"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+      # - title: Unpack What's Weighing You Down
+      #   content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
+      #   image: /images/projects/converter.jpg
+      #   featured:
+      #     name: Demo
+      #     link: https://django-converter.herokuapp.com
+      #   badges:
+      #     - "Django"
+      #     - "Bootstrap"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/gurusabarish/converter
 
-      - title: TEST
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
+      - title: Let's Connect...
+        content: Request or schedule a free 20-30 minute consultation call! Fill me in on what you’re looking for support with and get a feel for how I might be able to help.
+        image: /images/projects/converter1.jpg
+        # featured:
+        #   name: Demo V2
+        #   link: https://hugo-profile-2.netlify.app
+        # badges:
+        #   - "Hugo"
+        #   - "Bootstrap"
+        #   - "Javascript"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/gurusabarish/HugoProfileV2
+
+      - title: Unpack It Together
+        content: You don’t have to figure this all out on your own! I’ll be a grounded and compassionate ally, as we explore what’s bogging you down and uncover ways to feel more peace.
+        image: /images/projects/converter2.jpg
+        # featured:
+        #   name: Demo V2
+        #   link: https://hugo-profile-2.netlify.app
+        # badges:
+        #   - "Hugo"
+        #   - "Bootstrap"
+        #   - "Javascript"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/gurusabarish/HugoProfileV2
+
+      - title: Feel More At Peace
+        content: Through making space for yourself with personalized support, you’ll feel more grounded and at ease in your daily life. 
+        image: /images/projects/converter3.jpg
         # featured:
         #   name: Demo V2
         #   link: https://hugo-profile-2.netlify.app
@@ -386,7 +414,7 @@ params:
   contact:
     enable: true
     title: "Find Your Peace"
-    content: Therapy with me is collaborative. Reach out to schedule a consultation. You don’t have to figure it all out alone.
+    content: Therapy with me is collaborative. Reach out to schedule a consultation. </br>You don’t have to figure it out alone.
     btnName: Schedule an Appointment
     btnLink: mailto:mentalpaztherapy@gmail.com
     # formspree:
