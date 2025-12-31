@@ -64,6 +64,7 @@ Menus:
     #   weight: 2
 
 params:
+  enableCal: true
   enableGTM: true
   gtmID: "GTM-WP8T2VS4"
   title: "Hugo Profile"
@@ -414,9 +415,9 @@ params:
   contact:
     enable: true
     title: "Find Your Peace"
-    content: Therapy with me is collaborative. Reach out to schedule a consultation. </br>You don’t have to figure it out alone.
-    btnName: Schedule an Appointment
-    btnLink: mailto:mentalpaztherapy@gmail.com
+    content: Therapy with me is collaborative. Reach out to schedule a consultation. </br></br>You don’t have to figure it out alone.</br></br>
+    btnName: ""
+    btnLink: ""
     # formspree:
     #   enable: true # `contact.email` value will be ignored
     #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'

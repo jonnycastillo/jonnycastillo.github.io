@@ -729,19 +729,20 @@ MentalPaz Therapy and Wellness
             <div class="row justify-content-center px-md-5">
                 <div class="col-md-8 py-3">
                     <div class="text-center">
-                        Therapy with me is collaborative. Reach out to schedule a consultation. </br>You don’t have to figure it out alone.
-                    </div>
-                    
-                    <div class="text-center pt-3">
-                        <a 
-                            href='
-                                    mailto:mentalpaztherapy@gmail.com
-                                  '
-                            target="_blank"
-                            class="btn"
-                        >
-                            Schedule an Appointment
-                        </a>
+                        Therapy with me is collaborative. Reach out to schedule a consultation. </br></br>You don’t have to figure it out alone.</br></br>
+                            
+                            <div style="width:auto; min-height:1000px; height:1000vh; max-height:1000px" id="my-cal-inline-free-consultation"></div>
+                            <script type="text/javascript">
+                            (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+                            Cal("init", "free-consultation", {origin:"https://app.cal.com"});
+                            Cal.ns["free-consultation"]("inline", {
+                                elementOrSelector:"#my-cal-inline-free-consultation",
+                                config: {"layout":"month_view","theme":"auto"},
+                                calLink: "nicole-castillo-6d6omw/free-consultation",
+                            });
+                            Cal.ns["free-consultation"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+                            </script>
+                            
                     </div>
                     
                 </div>
@@ -895,6 +896,8 @@ MentalPaz Therapy and Wellness
   <section id="search-content" class="py-2">
     <div class="container" id="search-results"></div>
   </section>
+
+  
 </body>
 
 </html>

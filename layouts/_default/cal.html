@@ -1,0 +1,15 @@
+{{ define "main" }}
+<section class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+
+      <h1 class="text-center mb-4">
+        {{ .Title }}
+      </h1>
+
+      {{ partial "cal-free-consultation.html" . }}
+
+    </div>
+  </div>
+</section>
+{{ end }}
