@@ -1,0 +1,9 @@
+/* Font family override */
+.primary-font, #primary-font {
+    font-family: "Poppins", sans-serif !important;
+}
+
+/* Remove img-thumbnail background */
+.img-thumbnail {
+    background-color: transparent !important;
+}
