@@ -106,7 +106,7 @@ params:
     textLinkColor: "#007bff"
     backgroundColor: "#e4e3dd"
     secondaryBackgroundColor: "#64ffda1a"
-    primaryColor: "#cdbee6"
+    primaryColor: "#a394cf"
     secondaryColor: "#f8f9fa"
 
     darkmode:
