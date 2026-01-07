@@ -173,6 +173,11 @@
 
 /* aboutImg */
 
+.img-thumbnail{
+    background-color: transparent !important;
+}
+
+
 #single aside.aboutImg {
     padding: .7rem 1rem;
 }

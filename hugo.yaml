@@ -169,7 +169,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/hero.jpeg"
+    image: "/fav.png"
     content: |-
       I love helping young adults and women of color find calm, confidence, and self-trust in these messy, beautiful chapters of life.
 

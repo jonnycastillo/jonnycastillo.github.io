@@ -622,7 +622,7 @@ MentalPaz Therapy and Wellness
             
             <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">
                 <div class="image d-flex px-5">
-                    <img src="/images/hero.jpeg" class="img-thumbnail mx-auto rounded-circle" alt="">
+                    <img src="/fav.png" class="img-thumbnail mx-auto rounded-circle" alt="">
                 </div>
             </div>
             
@@ -740,26 +740,32 @@ MentalPaz Therapy and Wellness
                                 return document.body.className.includes("dark") ? "dark" : "light";
                             }
 
-                            Cal("init", "free-consultation", {origin:"https://app.cal.com"});
-                            Cal.ns["free-consultation"]("inline", {
-                                elementOrSelector:"#my-cal-inline-free-consultation",
-                                config: {"layout":"month_view","theme":getCurrentTheme()}, 
-                                calLink: "nicole-castillo-6d6omw/free-consultation",
-                            });
-                            Cal.ns["free-consultation"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
-
                             
-                            window.updateCalTheme = function() {
-                                
-                                document.getElementById("my-cal-inline-free-consultation").innerHTML = '';
-                                
-                                
+                            function initializeCal() {
+                                Cal("init", "free-consultation", {origin:"https://app.cal.com"});
                                 Cal.ns["free-consultation"]("inline", {
                                     elementOrSelector:"#my-cal-inline-free-consultation",
                                     config: {"layout":"month_view","theme":getCurrentTheme()},
                                     calLink: "nicole-castillo-6d6omw/free-consultation",
                                 });
                                 Cal.ns["free-consultation"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+                            }
+
+                            
+                            initializeCal();
+
+                            
+                            window.updateCalTheme = function() {
+                                
+                                const calContainer = document.getElementById("my-cal-inline-free-consultation");
+                                if (calContainer) {
+                                    calContainer.innerHTML = '';
+                                    
+                                    
+                                    setTimeout(() => {
+                                        initializeCal();
+                                    }, 100);
+                                }
                             };
                             </script>
                             

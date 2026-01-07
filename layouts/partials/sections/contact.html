@@ -17,26 +17,32 @@
                                 return document.body.className.includes("dark") ? "dark" : "light";
                             }
 
-                            Cal("init", "free-consultation", {origin:"https://app.cal.com"});
-                            Cal.ns["free-consultation"]("inline", {
-                                elementOrSelector:"#my-cal-inline-free-consultation",
-                                config: {"layout":"month_view","theme":getCurrentTheme()}, // Changed from "auto" to getCurrentTheme()
-                                calLink: "nicole-castillo-6d6omw/free-consultation",
-                            });
-                            Cal.ns["free-consultation"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
-
-                            // Function to reload Cal with new theme
-                            window.updateCalTheme = function() {
-                                // Clear the existing Cal embed
-                                document.getElementById("my-cal-inline-free-consultation").innerHTML = '';
-                                
-                                // Reinitialize with new theme
+                            // Initialize Cal
+                            function initializeCal() {
+                                Cal("init", "free-consultation", {origin:"https://app.cal.com"});
                                 Cal.ns["free-consultation"]("inline", {
                                     elementOrSelector:"#my-cal-inline-free-consultation",
                                     config: {"layout":"month_view","theme":getCurrentTheme()},
                                     calLink: "nicole-castillo-6d6omw/free-consultation",
                                 });
                                 Cal.ns["free-consultation"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+                            }
+
+                            // Initial load
+                            initializeCal();
+
+                            // Global function to update Cal theme
+                            window.updateCalTheme = function() {
+                                // Remove existing Cal iframe/content
+                                const calContainer = document.getElementById("my-cal-inline-free-consultation");
+                                if (calContainer) {
+                                    calContainer.innerHTML = '';
+                                    
+                                    // Small delay to ensure cleanup, then reinitialize
+                                    setTimeout(() => {
+                                        initializeCal();
+                                    }, 100);
+                                }
                             };
                             </script>
                             <!-- Cal inline embed code ends -->
