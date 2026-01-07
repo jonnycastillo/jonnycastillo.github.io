@@ -401,6 +401,11 @@ Cal("init", "free-consultation", {origin:"https://app.cal.com"});
             document.documentElement.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
         }
+
+        
+        if (typeof window.updateCalTheme === 'function') {
+            window.updateCalTheme();
+        }
     })
 
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
