@@ -141,17 +141,17 @@ params:
   # Hero
   hero:
     enable: true
-    intro: "Hi, my name is"
-    title: "Nicole."
-    subtitle: "I am a Licensed Marriage and Family Therapist"
-    content: "I offer online therapy for adults in their 20s and 30s.<br>Ready to untangle old patterns and find your peace?"
+    intro: "MentalPaz Therapy and Wellness"
+    title: "Online Therapy for Women and ADHDers"
+    subtitle: "in their 20s and 30s"
+    content: "For the ones who's mind is always busy, but still feel behind.<br>You deserve some mental peace."
     image: /images/hero.jpeg
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
     button:
       enable: true
-      name: "Find Your Peace"
+      name: "Book Now"
       url: "#contact"
       download: false
       newPage: false
@@ -171,9 +171,9 @@ params:
     title: "About Me"
     image: "/fav.png"
     content: |-
-      I love helping young adults and women of color find calm, confidence, and self-trust in these messy, beautiful chapters of life.
+      Hi! I'm Nicole Castillo, MA LMFT. Welcome to my practice! I love helping ADHDers and Women of Color find calm, confidence, and clarity in their 20s and 30s.
 
-      I combine culturally aware, trauma-informed approaches with practical tools to navigate anxiety, imposter syndrome, and generational patterns; helping you retain your resilience while letting go of what no longer serves you. I also specialize in supporting folks with ADHD, helping them develop strategies to manage focus, overwhelm, and self-expectations. 
+      I combine culturally aware, trauma-informed approaches with practical tools to navigate anxiety, imposter syndrome, and generational patterns; helping my clients retain their resilience while letting go of what no longer serves them. I also specialize in supporting folks with ADHD, helping them develop strategies to manage focus, overwhelm, and self-expectations. 
 
       As a Latina therapist who’s navigated her own share of transitions and identity shifts, I understand how heavy it can all feel. Therapy with me is collaborative; mixing curiosity, compassion, and practical tools to help you find clarity and relief. Reach out to schedule a consultation. You don’t have to figure it all out alone.
       <br><br>
@@ -371,7 +371,7 @@ params:
 
       - title: Let's Connect...
         content: Request or schedule a free 20-30 minute consultation call! Fill me in on what you’re looking for support with and get a feel for how I might be able to help.
-        image: /images/projects/converter1.jpg
+        image: /images/projects/connect.jpg
         # featured:
         #   name: Demo V2
         #   link: https://hugo-profile-2.netlify.app
@@ -385,7 +385,7 @@ params:
 
       - title: Unpack It Together
         content: You don’t have to figure this all out on your own! I’ll be a grounded and compassionate ally, as we explore what’s bogging you down and uncover ways to feel more peace.
-        image: /images/projects/converter2.jpg
+        image: /images/projects/unpack.jpg
         # featured:
         #   name: Demo V2
         #   link: https://hugo-profile-2.netlify.app
@@ -399,7 +399,7 @@ params:
 
       - title: Feel More At Peace
         content: Through making space for yourself with personalized support, you’ll feel more grounded and at ease in your daily life. 
-        image: /images/projects/converter3.jpg
+        image: /images/projects/paz.jpg
         # featured:
         #   name: Demo V2
         #   link: https://hugo-profile-2.netlify.app
