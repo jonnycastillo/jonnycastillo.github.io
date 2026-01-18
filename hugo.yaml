@@ -415,7 +415,7 @@ params:
   contact:
     enable: true
     title: "Find Your Peace"
-    content: Therapy with me is collaborative. Reach out to schedule a consultation. </br></br>You don’t have to figure it out alone.</br></br>Proudly serving clients throughout the state of California!</br></br></br>
+    content: Therapy with me is collaborative. Reach out to schedule a consultation. </br></br>You don’t have to figure it out alone.</br></br>Proudly serving clients throughout the state of California!</br></br>
     btnName: ""
     btnLink: ""
     # formspree:
@@ -433,11 +433,11 @@ params:
       enable: false
       disableFeaturedImage: false
     socialNetworks:
-      linkedin: https://linkedin.com
+      #linkedin: https://linkedin.com
       #twitter: https://twitter.com
       instagram: https://www.instagram.com/mentalpaztherapy/
       #facebook: https://facebook.com
-      pinterest: https://facebook.com
+      #pinterest: https://facebook.com
 
   # List pages like blogs and posts
   listPages:
