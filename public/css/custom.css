@@ -17,6 +17,6 @@
 
 /* Navbar brand - scale everything together */
 .navbar-brand {
-    transform: scale(1.9); /* 1.3 = 30% larger, 1.5 = 50% larger */
+    transform: scale(1.7); /* 1.3 = 30% larger, 1.5 = 50% larger */
     transform-origin: left center; /* keeps it aligned to the left */
 }

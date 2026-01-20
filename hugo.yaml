@@ -67,8 +67,9 @@ params:
   enableCal: true
   enableGTM: true
   gtmID: "GTM-WP8T2VS4"
-  title: "Hugo Profile"
-  description: Text about my cool site
+  title: "MentalPaz Therapy and Wellness"
+  description: "Online therapy for women and ADHDers in their 20s and 30s. LMFT Nicole Castillo provides culturally aware, trauma-informed therapy throughout California."
+  keywords: "online therapy California, ADHD therapy, women's mental health, Latina therapist, anxiety therapy, trauma therapy, LMFT" 
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
 
@@ -160,7 +161,7 @@ params:
         - icon: fa-brands fa-instagram
           url: https://www.instagram.com/mentalpaztherapy/
         - icon: fab fa-x-twitter
-          url: https://www.instagram.com/mentalpaztherapy/
+          url: https://x.com/MentalPazTherap
       customIcons:
         - icon: /images/alma-fav.png
           url: "https://secure.helloalma.com/providers/nicole-hernandez/"
