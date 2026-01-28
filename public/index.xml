@@ -57,5 +57,12 @@
       <guid>http://localhost:1313/free-consultation/</guid>
       <description></description>
     </item>
+    <item>
+      <title>Thank You for Booking</title>
+      <link>http://localhost:1313/thank-you/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/thank-you/</guid>
+      <description>&lt;h1 id=&#34;your-appointment-is-successfully-scheduled&#34;&gt;Your appointment is successfully scheduled!&lt;/h1&gt;&#xA;&lt;p&gt;Thank you for booking, I&amp;rsquo;m looking forward to speaking with you!&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-happens-next&#34;&gt;What Happens Next?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Please be ready to receive a phone call at your scheduled appointment time.&lt;/strong&gt; I&amp;rsquo;ll call you directly on the phone number you provided.&lt;/p&gt;&#xA;&lt;h3 id=&#34;before-your-consultation&#34;&gt;Before Your Consultation:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Check Your Email&lt;/strong&gt; - You should receive a confirmation email with your appointment details&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Be in a Quiet Space&lt;/strong&gt; - Find a comfortable, private location where we can talk freely&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Have Your Questions Ready&lt;/strong&gt; - Think about what you&amp;rsquo;d like to discuss during our time together&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Test Your Phone&lt;/strong&gt; - Make sure your phone is charged and has good reception&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;need-to-reschedule&#34;&gt;Need to Reschedule?&lt;/h3&gt;&#xA;&lt;p&gt;If something comes up and you need to change your appointment time, you can reschedule using the link in your confirmation email.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

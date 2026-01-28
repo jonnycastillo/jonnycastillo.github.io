@@ -111,7 +111,33 @@
 <link rel="stylesheet" href="/css/custom.css" media="all">
 
 
-
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "MentalPaz Therapy and Wellness",
+      "description": "Online therapy for women and ADHDers in their 20s and 30s",
+      "url": "http:\/\/localhost:1313\/",
+      "image": "http:\/\/localhost:1313\/images/hero.jpeg",
+      "telephone": "+1-949-478-1757",
+      "areaServed": {
+        "@type": "State",
+        "name": "California"
+      },
+      "serviceType": [
+        "Mental Health Counseling",
+        "ADHD Therapy",
+        "Anxiety Therapy",
+        "Trauma Therapy"
+      ],
+      "provider": {
+        "@type": "Person",
+        "name": "Nicole Castillo",
+        "jobTitle": "Licensed Marriage and Family Therapist",
+        "description": "LMFT specializing in ADHD, anxiety, and trauma therapy for women of color"
+      }
+    }
+    </script>
 
   
   
@@ -274,14 +300,19 @@
       </h1>
 
       
-<div style="width:100%;height:100px;overflow:scroll" id="my-cal-inline-free-consultation"></div>
+<div style="width:100%;min-height:700px;height:80vh;overflow:auto" id="my-cal-inline-free-consultation"></div>
 <script type="text/javascript">
   (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
 Cal("init", "free-consultation", {origin:"https://app.cal.com"});
 
+
+function getCurrentTheme() {
+  return document.body.className.includes("dark") ? "dark" : "light";
+}
+
   Cal.ns["free-consultation"]("inline", {
     elementOrSelector:"#my-cal-inline-free-consultation",
-    config: {"layout":"month_view","theme":"auto"},
+    config: {"layout":"month_view","theme":getCurrentTheme()},
     calLink: "nicole-castillo-6d6omw/free-consultation",
   });
 
