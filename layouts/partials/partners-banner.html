@@ -1,0 +1,24 @@
+<section class="partners-banner">
+    <h2>Now Accepting</h2>
+    <div class="scroll-wrapper">
+      <div class="logo-container">
+        <!-- First set of logos -->
+        {{ range .Site.Params.partners }}
+          {{ if .enabled }}
+            <div title="{{ .name }}">
+              <img src="{{ .logo }}" alt="{{ .name }} logo">
+            </div>
+          {{ end }}
+        {{ end }}
+        
+        <!-- Duplicate set for seamless loop -->
+        {{ range .Site.Params.partners }}
+          {{ if .enabled }}
+            <div title="{{ .name }}">
+              <img src="{{ .logo }}" alt="{{ .name }} logo">
+            </div>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </section>

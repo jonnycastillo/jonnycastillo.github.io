@@ -72,6 +72,27 @@ params:
   keywords: "online therapy California, ADHD therapy, women's mental health, Latina therapist, anxiety therapy, trauma therapy, LMFT" 
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
+  partners:
+  - name: "Aetna"
+    logo: "/images/logos/aetna.png"
+    url: ""
+    enabled: true
+  - name: "Cigna"
+    logo: "/images/logos/cigna.svg"
+    url: ""
+    enabled: true
+  - name: "Nippon"
+    logo: "/images/logos/nippon.png"
+    url: ""
+    enabled: false
+  - name: "Optum"
+    logo: "/images/logos/optum.png"
+    url: ""
+    enabled: true
+  - name: "United Healthcare"
+    logo: "/images/logos/uhc.svg"
+    url: ""
+    enabled: true
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -189,7 +210,7 @@ params:
         - "Trauma or PTSD"
         - "Women’s mental health"
 
-  # Experience
+ # Experience
   experience:
     enable: false
     # title: "Custom Name"

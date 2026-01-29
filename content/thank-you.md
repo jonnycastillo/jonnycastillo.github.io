@@ -27,7 +27,7 @@ If something comes up and you need to change your appointment time, you can resc
 
 ## Questions Before Your Appointment?
 
-If you have any questions before our call, feel free to [mentalpaztherapy@gmail.com](mailto:mentalpaztherapy@gmail.com).
+If you have any questions before our call, feel free to email me at [mentalpaztherapy@gmail.com](mailto:mentalpaztherapy@gmail.com).
 
 I'm excited to connect with you and learn how I can support your wellness journey.
 
