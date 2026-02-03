@@ -6,6 +6,7 @@ description: "A clear, compassionate guide to finding the right therapist, under
 draft: false
 tags: ["finding a therapist", "how to choose a therapist", "therapy basics", "mental health support", "culturally responsive therapy", "women of color therapy", "starting therapy"]
 author: "Nicole Castillo, LMFT"
+image: /images/blog_right_therapist_guide.jpg
 sitemap:
   priority: 0.9
 ---

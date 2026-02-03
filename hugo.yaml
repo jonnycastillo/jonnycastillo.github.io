@@ -169,9 +169,9 @@ params:
   hero:
     enable: true
     intro: "MentalPaz Therapy and Wellness"
-    title: "Online Therapy for Women and ADHDers"
-    subtitle: "in their 20s and 30s"
-    content: "For the ones whose minds are always running, but still feel behind,<br>you deserve some mental peace."
+    title: "Online therapy for women and ADHDers."
+    subtitle:
+    content: You deserve some mental peace.
     image: /images/hero.jpeg
     bottomImage:
       enable: true
@@ -198,12 +198,7 @@ params:
     title: "About Me"
     image: "/fav.png"
     content: |-
-      Hi! I'm Nicole Castillo, MA LMFT. Welcome to my practice! I love helping ADHDers and Women of Color find calm, confidence, and clarity in their 20s and 30s.
-
-      I combine culturally aware, trauma-informed approaches with practical tools to navigate anxiety, imposter syndrome, and generational patterns; helping my clients retain their resilience while letting go of what no longer serves them. I also specialize in supporting folks with ADHD, helping them develop strategies to manage focus, overwhelm, and self-expectations. 
-
-      As a Latina therapist who’s navigated her own share of transitions and identity shifts, I understand how heavy it can all feel. Therapy with me is collaborative; mixing curiosity, compassion, and practical tools to help you find clarity and relief. Reach out to schedule a consultation. You don’t have to figure it all out alone.
-      <br><br>
+      **I'm Nicole Castillo, MA LMFT**—founder of MentalPaz, Latina therapist, new mama, and young breast cancer survivor who gets what it's like to balance identity, ambition, and healing. <br><br>With over a decade of experience, I couldn’t be more passionate about working in solidarity with my clients. <br><br>
     skills:
       enable: true
       title: "Here are some of my specialties:"
@@ -214,6 +209,13 @@ params:
         - "Race and ethnicity"
         - "Trauma or PTSD"
         - "Women’s mental health"
+
+  approach:
+    enable: true
+    title: "My Approach to Therapy"
+    btnName: ""
+    btnLink: ""
+    image: ""
 
  # Experience
   experience:
@@ -397,7 +399,7 @@ params:
       #       url: https://github.com/gurusabarish/converter
 
       - title: Let's Connect...
-        content: Request or schedule a free 20-30 minute consultation call! Fill me in on what you’re looking for support with and get a feel for how I might be able to help.
+        content: Schedule a free consultation to explore how I can support you.
         image: /images/projects/connect.jpg
         # featured:
         #   name: Demo V2
@@ -411,7 +413,7 @@ params:
       #       url: https://github.com/gurusabarish/HugoProfileV2
 
       - title: Unpack It Together
-        content: You don’t have to figure this all out on your own! I’ll be a grounded and compassionate ally, as we explore what’s bogging you down and uncover ways to feel more peace.
+        content: I'll be your grounded, compassionate ally as we explore what's weighing you down and discover pathways to peace.
         image: /images/projects/unpack.jpg
         # featured:
         #   name: Demo V2
@@ -425,7 +427,7 @@ params:
       #       url: https://github.com/gurusabarish/HugoProfileV2
 
       - title: Feel More At Peace
-        content: Through making space for yourself with personalized support, you’ll feel more grounded and at ease in your daily life. 
+        content: With personalized support, you'll feel more grounded and at ease in your daily life.
         image: /images/projects/paz.jpg
         # featured:
         #   name: Demo V2
@@ -442,9 +444,9 @@ params:
   contact:
     enable: true
     title: "Find Your Peace"
-    content: Therapy with me is collaborative. Reach out to schedule a consultation. </br></br>You don’t have to figure it out alone.</br></br>Proudly serving clients throughout the state of California!</br></br>
-    btnName: ""
-    btnLink: ""
+    content: Schedule a consultation today! </br></br>Proudly serving clients throughout the state of California!</br></br>Therapy with me is collaborative. You don’t have to figure it out alone. </br></br>If you can't find any appointment slots, send me a message and let me know your availability.
+    btnName: "Send me a message"
+    btnLink: "mailto:mentalpaztherapy@gmail.com"
     # formspree:
     #   enable: true # `contact.email` value will be ignored
     #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
@@ -455,7 +457,7 @@ params:
   footer:
     recentPosts:
       path: "blogs"
-      count: 3
+      count: 2
       title: Recent Posts
       enable: false
       disableFeaturedImage: false
