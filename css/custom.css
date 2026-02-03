@@ -24,7 +24,7 @@
 
 /* Partners scrolling banner */
 .partners-banner {
-    padding-top: 1rem;   /* Increased from 10rem by 20% */
+    padding-top: 9rem;   /* Increased from 10rem by 20% */
     padding-bottom: 9rem;  /* Decreased from 10rem by 5% */
     background: transparent;
     overflow: hidden;
@@ -81,4 +81,92 @@
 .logo-container div:hover img {
     filter: none !important;
     opacity: 1 !important;
+}
+
+/* approach section - contact layout with hero text styling */
+
+#approach .subtitle {
+    font-size: clamp(14px,5vw,16px);
+    opacity: 0.6;
+}
+
+#approach h1 {
+    font-size: clamp(40px, 8vw, 80px);
+    color: var(--primary-color) !important;
+}
+
+#approach p {
+    opacity: 0.8;
+}
+
+#approach .btn {
+    transition: none;
+    transition: opacity 0.3s;
+    border-radius: .5rem !important;
+    border-color: var(--primary-color) !important;
+    background-color: var(--secondary-color) !important;
+    color: var(--text-color) !important;
+}
+
+#approach .btn:hover {
+    opacity: .7;
+}
+
+#approach .btn:focus {
+    box-shadow: none !important;
+}
+
+/* Remove styling from About Me image - flat appearance */
+
+#about .image img {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    transition: none !important;
+}
+
+#about .image img:hover {
+    box-shadow: none !important;
+    transform: none !important;
+}
+
+/* Increase font size in approach section */
+
+#hero p {
+    font-size: 1.7rem;  /* Adjust this value as needed */
+    margin: 20px 0px 0px;
+    max-width: 640px;
+    opacity: 0.5 !important;
+}
+
+#approach p {
+    font-size: 1.2rem;  /* Adjust this value as needed */
+    opacity: 0.8;
+}
+
+
+#approach h1 {
+    font-size: 2.3rem !important;  /* Adjust these values as needed */
+    color: var(--primary-color) !important;
+}
+
+/* Add padding below approach section */
+
+#approach {
+    padding-top: 20px !important;
+    padding-bottom: 80px !important;  /* Adjust this value as needed */
+}
+
+/* Match partners banner title color to other section titles */
+
+.partners-banner h2 {
+    text-align: center !important;
+    color: var(--text-secondary-color) !important;
+}
+
+.partners-banner .subtitle {
+    text-align: center !important;
+    margin-bottom: 40px;  /* Increased from 20px */
+    color: var(--text-secondary-color) !important;
+    opacity: 0.8;
 }
