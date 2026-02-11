@@ -123,6 +123,7 @@
     border: none !important;
     padding: 0 !important;
     transition: none !important;
+    border-radius: 0 !important;
 }
 
 #about .image img:hover {
@@ -140,8 +141,9 @@
 }
 
 #approach p {
-    font-size: 1.2rem;  /* Adjust this value as needed */
-    opacity: 0.8;
+    font-weight: 500;
+    opacity: 0.9 !important;
+    line-height: 1.7rem !important;
 }
 
 
@@ -150,11 +152,41 @@
     color: var(--primary-color) !important;
 }
 
-/* Add padding below approach section */
+/* Add padding to approach section - match about section margin */
 
 #approach {
-    padding-top: 20px !important;
-    padding-bottom: 80px !important;  /* Adjust this value as needed */
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
+
+/* Mobile-only: left align paragraph content in approach section */
+@media (max-width: 767px) {
+    #approach p {
+        text-align: left !important;
+    }
+}
+
+/* Mobile-only: left align content in contact section */
+@media (max-width: 767px) {
+    #contact .text-center {
+        text-align: left !important;
+    }
+    /* Keep title centered - it's outside .text-center div */
+    #contact > .container > h3 {
+        text-align: center !important;
+    }
+    /* Keep button centered */
+    #contact .text-center .btn {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+    }
+    
+    /* Hero content paragraph less bold on mobile */
+    #hero .content p {
+        font-weight: 400 !important;
+    }
 }
 
 /* Match partners banner title color to other section titles */
