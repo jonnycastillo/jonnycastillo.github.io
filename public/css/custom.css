@@ -24,7 +24,7 @@
 
 /* Partners scrolling banner */
 .partners-banner {
-    padding-top: 9rem;   /* Increased from 10rem by 20% */
+    padding-top: 4rem;   /* Increased from 10rem by 20% */
     padding-bottom: 9rem;  /* Decreased from 10rem by 5% */
     background: transparent;
     overflow: hidden;
@@ -156,7 +156,7 @@
 
 #approach {
     padding-top: 5rem !important;
-    padding-bottom: 5rem !important;
+    padding-bottom: 0.5rem !important;
 }
 
 /* Mobile-only: left align paragraph content in approach section */
