@@ -171,7 +171,7 @@ params:
     intro: "MentalPaz Therapy and Wellness"
     title: "Online therapy for women and ADHDers."
     subtitle:
-    content: You deserve some mental peace.
+    content: You deserve some<br class="d-block d-md-none">mental peace.
     image: /images/hero.jpeg
     bottomImage:
       enable: true
@@ -212,7 +212,7 @@ params:
 
   approach:
     enable: true
-    title: "My Approach to Therapy"
+    title: "Your mind never stops running, yet you still feel “behind.” "
     btnName: ""
     btnLink: ""
     image: ""
@@ -444,7 +444,7 @@ params:
   contact:
     enable: true
     title: "Find Your Peace"
-    content: Schedule a consultation today! </br></br>Proudly serving clients throughout the state of California!</br></br>Therapy with me is collaborative. You don’t have to figure it out alone. </br></br>If you can't find any appointment slots, send me a message and let me know your availability.
+    content: Schedule a consultation today! </br></br>Proudly serving clients throughout the state of California!</br></br>Therapy with me is collaborative. You don’t have to figure it out alone. </br></br>If you can't find any appointment slots, send me a message and let me know your availability.</br>
     btnName: "Send me a message"
     btnLink: "mailto:mentalpaztherapy@gmail.com"
     # formspree:

@@ -7,27 +7,25 @@
             {{ end }}
             <h1>{{ .Site.Params.approach.title | default "My Approach to Therapy" }}</h1>
         </div>
-        <div class="px-0 px-md-5 px-lg-5">
-            <div class="row justify-content-center px-md-5">
-                <div class="col-md-12 py-3">
-                    <div class="text-center">
-                        <p>You're juggling so much—college, career, relationships, identity, or maybe even starting a family. Add in anxiety, the weight of expectations, or ADHD and it can all feel like too much.</p>
-                        
-                        <p><strong>There is an easier way. Let me help you find it.</strong></p>
-                        
-                        <p>I'll provide a culturally affirming, trauma-informed space where we work with who you are—not against it. Together, we'll develop strategies to manage overwhelm, improve focus, and quiet that inner critic. Our work will be collaborative, compassionate, and rooted in curiosity. My goal is to help you experience more calm, confidence, and clarity in your daily life.</p>
-                        
-                        <p><strong>Ready to stop figuring it all out alone? Reach out for a free consultation. Let's chat.</strong></p>
-                    </div>
+        <div class="bg-transparent row justify-content-center px-3 py-5">
+            <div class="col-md-12">
+                <div class="text-center">
+                    <p>You're juggling so much—college, career, relationships, identity, or maybe even starting a family. Add in anxiety, the weight of expectations, or ADHD and it can all feel like too much.</p>
                     
-                    {{ if .Site.Params.approach.btnLink }}
-                    <div class="text-center pt-3">
-                        <a href="{{ .Site.Params.approach.btnLink }}" target="_blank" class="btn">
-                            {{ .Site.Params.approach.btnName | default "Schedule Consultation" }}
-                        </a>
-                    </div>
-                    {{ end }}
+                    <p><strong>There <em>is</em> an easier way. Let me help you find it.</strong></p>
+                    
+                    <p>I'll provide a culturally affirming, trauma-informed space where we work <em>with</em> who you are—not against it. Together, we'll develop strategies to manage overwhelm, improve focus, and quiet that inner critic. Our work will be collaborative, compassionate, and rooted in curiosity. My goal is to help you experience more calm, confidence, and clarity in your daily life.</p>
+                    
+                    <p><strong>Ready to stop figuring it all out alone? Reach out for a free consultation. Let's chat.</strong></p>
                 </div>
+                
+                {{ if .Site.Params.approach.btnLink }}
+                <div class="text-center pt-3">
+                    <a href="{{ .Site.Params.approach.btnLink }}" target="_blank" class="btn">
+                        {{ .Site.Params.approach.btnName | default "Schedule Consultation" }}
+                    </a>
+                </div>
+                {{ end }}
             </div>
         </div>
     </div>

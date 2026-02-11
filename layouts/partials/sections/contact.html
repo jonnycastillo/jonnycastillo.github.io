@@ -2,85 +2,83 @@
 <section id="contact" class="pt-5" style="padding-bottom: 5px;">
     <div class="container">
         <h3 class="text-center">{{ .Site.Params.contact.title | default "Get in Touch" }}</h3>
-        <div class="px-0 px-md-5 px-lg-5">
-            <div class="row justify-content-center px-md-5">
-                <div class="col-md-12 py-3">
-                    <div class="text-center">
-                        {{ .Site.Params.contact.content | emojify | markdownify }}
-                        
-                        <!-- BUTTON MOVED HERE - BEFORE CAL EMBED -->
-                        {{ if or (.Site.Params.contact.email) (.Site.Params.contact.btnLink) }}
-                        <div class="text-center pt-3 pb-4">
-                            <a 
-                                href='{{ if .Site.Params.contact.btnLink }}
-                                        {{ .Site.Params.contact.btnLink | default "#" }}
-                                      {{ else }}
-                                        mailto:{{ .Site.Params.contact.email }}
-                                      {{ end }}'
-                                target="_blank"
-                                class="btn"
-                            >
-                                {{ .Site.Params.contact.btnName | default "Get in Touch" }}
-                            </a>
-                        </div>
-                        {{ end }}
-                        
-                        <!-- Cal inline embed code begins -->
-                        <div style="width:100%;min-height:700px;height:auto;overflow:visible" id="my-cal-inline-free-consultation"></div>
-                        <script type="text/javascript">
-                        (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-
-                        // Function to get current theme
-                        function getCurrentTheme() {
-                            return document.body.className.includes("dark") ? "dark" : "light";
-                        }
-
-                        // Initialize Cal
-                        function initializeCal() {
-                            Cal("init", "free-consultation", {origin:"https://app.cal.com"});
-                            Cal.ns["free-consultation"]("inline", {
-                                elementOrSelector:"#my-cal-inline-free-consultation",
-                                config: {"layout":"month_view","theme":getCurrentTheme()},
-                                calLink: "nicole-castillo-6d6omw/free-consultation",
-                            });
-                            Cal.ns["free-consultation"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
-                        }
-
-                        // Initial load
-                        initializeCal();
-
-                        // Global function to update Cal theme
-                        window.updateCalTheme = function() {
-                            // Remove existing Cal iframe/content
-                            const calContainer = document.getElementById("my-cal-inline-free-consultation");
-                            if (calContainer) {
-                                calContainer.innerHTML = '';
-                                
-                                // Small delay to ensure cleanup, then reinitialize
-                                setTimeout(() => {
-                                    initializeCal();
-                                }, 100);
-                            }
-                        };
-                        </script>
-                        <!-- Cal inline embed code ends -->
-                    </div>
-                    {{ if .Site.Params.contact.formspree.enable | default false }}
-                    <div class="row justify-content-center">
-                        <form id="contact-form" action="https://formspree.io/f/{{ .Site.Params.contact.formspree.formId }}" onsubmit="handleFormspreeSubmit(event)" method="POST" class="col-md-7">
-                            <div class="form-group pt-3">
-                                <input type="email" class="form-control"  name="email" required="true" placeholder='{{ .Site.Params.contact.formspree.emailCaption | emojify | default "Enter your email" }}'>
-                            </div>
-                            <div class="form-group pt-3">
-                                <textarea class="form-control" name="message" required="true" placeholder='{{ .Site.Params.contact.formspree.messageCaption | emojify | default "Enter your message" }}' rows="{{ .Site.Params.contact.formspree.messageRows | default 3 }}"></textarea>
-                            </div>
-                            <div class="form-group text-center pt-3">
-                                <button type="submit" class="btn">{{ .Site.Params.contact.btnName | default "Get in Touch" }}</button>
-                            </div>
-                        </form>
+        <div class="bg-transparent row justify-content-center px-3 py-5">
+            <div class="col-md-12">
+                <div class="text-center">
+                    {{ .Site.Params.contact.content | emojify | markdownify }}
+                    
+                    <!-- BUTTON MOVED HERE - BEFORE CAL EMBED -->
+                    {{ if or (.Site.Params.contact.email) (.Site.Params.contact.btnLink) }}
+                    <div class="text-center pt-3 pb-4">
+                        <a 
+                            href='{{ if .Site.Params.contact.btnLink }}
+                                    {{ .Site.Params.contact.btnLink | default "#" }}
+                                  {{ else }}
+                                    mailto:{{ .Site.Params.contact.email }}
+                                  {{ end }}'
+                            target="_blank"
+                            class="btn"
+                        >
+                            {{ .Site.Params.contact.btnName | default "Get in Touch" }}
+                        </a>
                     </div>
                     {{ end }}
+                    
+                    <!-- Cal inline embed code begins -->
+                    <div style="width:100%;min-height:700px;height:auto;overflow:visible" id="my-cal-inline-free-consultation"></div>
+                    <script type="text/javascript">
+                    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+
+                    // Function to get current theme
+                    function getCurrentTheme() {
+                        return document.body.className.includes("dark") ? "dark" : "light";
+                    }
+
+                    // Initialize Cal
+                    function initializeCal() {
+                        Cal("init", "free-consultation", {origin:"https://app.cal.com"});
+                        Cal.ns["free-consultation"]("inline", {
+                            elementOrSelector:"#my-cal-inline-free-consultation",
+                            config: {"layout":"month_view","theme":getCurrentTheme()},
+                            calLink: "nicole-castillo-6d6omw/free-consultation",
+                        });
+                        Cal.ns["free-consultation"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+                    }
+
+                    // Initial load
+                    initializeCal();
+
+                    // Global function to update Cal theme
+                    window.updateCalTheme = function() {
+                        // Remove existing Cal iframe/content
+                        const calContainer = document.getElementById("my-cal-inline-free-consultation");
+                        if (calContainer) {
+                            calContainer.innerHTML = '';
+                            
+                            // Small delay to ensure cleanup, then reinitialize
+                            setTimeout(() => {
+                                initializeCal();
+                            }, 100);
+                        }
+                    };
+                    </script>
+                    <!-- Cal inline embed code ends -->
                 </div>
+                {{ if .Site.Params.contact.formspree.enable | default false }}
+                <div class="row justify-content-center">
+                    <form id="contact-form" action="https://formspree.io/f/{{ .Site.Params.contact.formspree.formId }}" onsubmit="handleFormspreeSubmit(event)" method="POST" class="col-md-7">
+                        <div class="form-group pt-3">
+                            <input type="email" class="form-control"  name="email" required="true" placeholder='{{ .Site.Params.contact.formspree.emailCaption | emojify | default "Enter your email" }}'>
+                        </div>
+                        <div class="form-group pt-3">
+                            <textarea class="form-control" name="message" required="true" placeholder='{{ .Site.Params.contact.formspree.messageCaption | emojify | default "Enter your message" }}' rows="{{ .Site.Params.contact.formspree.messageRows | default 3 }}"></textarea>
+                        </div>
+                        <div class="form-group text-center pt-3">
+                            <button type="submit" class="btn">{{ .Site.Params.contact.btnName | default "Get in Touch" }}</button>
+                        </div>
+                    </form>
+                </div>
+                {{ end }}
             </div>
         </div>
     </div>
