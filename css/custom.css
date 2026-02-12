@@ -1,5 +1,15 @@
-/* Font family override */
+
+/* Old Font -Font family override if reverting
 .primary-font, #primary-font {
+    font-family: "Poppins", sans-serif !important;
+}*/
+/* Font family override */
+body, .primary-font, #primary-font {
+    font-family: "Poppins", sans-serif !important;
+}
+
+/* Apply Poppins to all headings and text elements */
+h1, h2, h3, h4, h5, h6, p, a, li, span, div, button, input, textarea, label {
     font-family: "Poppins", sans-serif !important;
 }
 
@@ -24,7 +34,7 @@
 
 /* Partners scrolling banner */
 .partners-banner {
-    padding-top: 4rem;   /* Increased from 10rem by 20% */
+    padding-top: 1rem;   /* Increased from 10rem by 20% */
     padding-bottom: 9rem;  /* Decreased from 10rem by 5% */
     background: transparent;
     overflow: hidden;
@@ -156,7 +166,7 @@
 
 #approach {
     padding-top: 5rem !important;
-    padding-bottom: 0.5rem !important;
+    padding-bottom: 1rem !important;  /* Reduced from 5rem to decrease space before projects */
 }
 
 /* Mobile-only: left align paragraph content in approach section */
@@ -201,4 +211,13 @@
     margin-bottom: 40px;  /* Increased from 20px */
     color: var(--text-secondary-color) !important;
     opacity: 0.8;
+}
+
+/* Projects section - make titles bolder than content */
+#projects .card h5 {
+    font-weight: 600 !important;
+}
+
+#projects .card-text {
+    font-weight: 400 !important;
 }
