@@ -171,7 +171,7 @@ params:
     intro: "MentalPaz Therapy and Wellness"
     title: "Online therapy for women and ADHDers."
     subtitle:
-    content: You deserve some <br class="d-block d-md-none"> mental peace.
+    content: You deserve some &nbsp;<br class="d-block d-md-none">mental peace.
     image: /images/hero.jpeg
     bottomImage:
       enable: true
