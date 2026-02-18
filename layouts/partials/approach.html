@@ -5,7 +5,7 @@
             {{ if .Site.Params.approach.subtitle }}
             <p class="subtitle">{{ .Site.Params.approach.subtitle }}</p>
             {{ end }}
-            <h1>{{ .Site.Params.approach.title | default "My Approach to Therapy" }}</h1>
+            <h1>{{ .Site.Params.approach.title | default "My Approach to Therapy" | safeHTML}}</h1>
         </div>
         <div class="bg-transparent row justify-content-center px-3 py-5">
             <div class="col-md-12">

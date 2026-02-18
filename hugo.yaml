@@ -212,7 +212,7 @@ params:
 
   approach:
     enable: true
-    title: "Your mind never stops running, yet you still feel “behind.” "
+    title: Your mind never<br>stops running, yet you<br>still feel “behind.”
     btnName: ""
     btnLink: ""
     image: ""
