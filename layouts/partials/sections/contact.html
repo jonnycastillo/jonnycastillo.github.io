@@ -24,45 +24,60 @@
                     </div>
                     {{ end }}
                     
-                    <!-- Cal inline embed code begins -->
-                    <div style="width:100%;min-height:700px;height:auto;overflow:visible" id="my-cal-inline-free-consultation"></div>
-                    <script type="text/javascript">
-                    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+                        <!-- Cal inline embed code begins -->
+    <div style="width:100%;min-height:700px;height:auto;overflow:visible" id="my-cal-inline-free-consultation"></div>
+    <script type="text/javascript">
+        let calLoaded = false;
 
-                    // Function to get current theme
-                    function getCurrentTheme() {
-                        return document.body.className.includes("dark") ? "dark" : "light";
-                    }
+        function getCurrentTheme() {
+            return document.body.className.includes("dark") ? "dark" : "light";
+        }
 
-                    // Initialize Cal
-                    function initializeCal() {
-                        Cal("init", "free-consultation", {origin:"https://app.cal.com"});
-                        Cal.ns["free-consultation"]("inline", {
-                            elementOrSelector:"#my-cal-inline-free-consultation",
-                            config: {"layout":"month_view","theme":getCurrentTheme()},
-                            calLink: "nicole-castillo-6d6omw/free-consultation",
-                        });
-                        Cal.ns["free-consultation"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
-                    }
+        function initializeCal() {
+            Cal("init", "free-consultation", {origin:"https://app.cal.com"});
+            Cal.ns["free-consultation"]("inline", {
+                elementOrSelector:"#my-cal-inline-free-consultation",
+                config: {"layout":"month_view","theme":getCurrentTheme()},
+                calLink: "nicole-castillo-6d6omw/free-consultation",
+            });
+            Cal.ns["free-consultation"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+        }
 
-                    // Initial load
-                    initializeCal();
+        function loadCal() {
+            if (calLoaded) return;
+            calLoaded = true;
 
-                    // Global function to update Cal theme
-                    window.updateCalTheme = function() {
-                        // Remove existing Cal iframe/content
-                        const calContainer = document.getElementById("my-cal-inline-free-consultation");
-                        if (calContainer) {
-                            calContainer.innerHTML = '';
-                            
-                            // Small delay to ensure cleanup, then reinitialize
-                            setTimeout(() => {
-                                initializeCal();
-                            }, 100);
-                        }
-                    };
-                    </script>
-                    <!-- Cal inline embed code ends -->
+            // This is the same self-executing loader Cal provides, just triggered on our terms
+            (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; let s = d.createElement("script"); s.src = A; s.onload = function() { initializeCal(); }; d.head.appendChild(s); cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+        }
+
+        // Trigger immediately if contact section is near viewport
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            const observer = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting) {
+                    loadCal();
+                    observer.disconnect();
+                }
+            }, { rootMargin: '300px' });
+            observer.observe(contactSection);
+        }
+
+        // Otherwise load after page is idle
+        window.addEventListener('load', () => {
+            requestIdleCallback(() => loadCal(), { timeout: 3000 });
+        });
+
+        // Theme updater — still works since it calls initializeCal which is now defined above
+        window.updateCalTheme = function() {
+            const calContainer = document.getElementById("my-cal-inline-free-consultation");
+            if (calContainer) {
+                calContainer.innerHTML = '';
+                setTimeout(() => { initializeCal(); }, 100);
+            }
+        };
+    </script>
+    <!-- Cal inline embed code ends -->
                 </div>
                 {{ if .Site.Params.contact.formspree.enable | default false }}
                 <div class="row justify-content-center">
