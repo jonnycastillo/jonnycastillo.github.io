@@ -2,19 +2,7 @@
 <html lang="en">
 
 <head>
-	<meta name="generator" content="Hugo 0.152.2">
-  
-  
-  <script>
-    window.addEventListener('load', function() {
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-WP8T2VS4');
-    });
-  </script>
-  
+	<meta name="generator" content="Hugo 0.152.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -24,7 +12,7 @@
 
 <meta name="description" content="Online therapy for women and ADHDers in their 20s and 30s. LMFT Nicole Castillo provides culturally aware, trauma-informed therapy throughout California.">
 <meta name="keywords" content="online therapy California, ADHD therapy, women&#39;s mental health, Latina therapist, anxiety therapy, trauma therapy, LMFT">
-<link rel="canonical" href="https://mentalpaz.com/">
+<link rel="canonical" href="http://localhost:1313/">
 
 <link rel="icon" href="https://img.mentalpaz.com/fav.webp" type="image/gif">
 <link rel="preload" as="image"
@@ -50,7 +38,7 @@
 
 
 
-<meta property="og:url" content="https://mentalpaz.com/">
+<meta property="og:url" content="http://localhost:1313/">
   <meta property="og:site_name" content="MentalPaz Therapy and Wellness">
   <meta property="og:title" content="MentalPaz Therapy and Wellness">
   <meta property="og:description" content="Online therapy for women and ADHDers in their 20s and 30s. LMFT Nicole Castillo provides culturally aware, trauma-informed therapy throughout California.">
@@ -135,8 +123,8 @@
       "@type": "ProfessionalService",
       "name": "MentalPaz Therapy and Wellness",
       "description": "Online therapy for women and ADHDers in their 20s and 30s",
-      "url": "https:\/\/mentalpaz.com\/",
-      "image": "https:\/\/mentalpaz.com\/images/hero.jpeg",
+      "url": "http:\/\/localhost:1313\/",
+      "image": "http:\/\/localhost:1313\/images/hero.jpeg",
       "telephone": "+1-949-478-1757",
       "areaServed": {
         "@type": "State",
@@ -175,11 +163,49 @@ MentalPaz Therapy and Wellness
 
 <body class="light">
   
-  
-  
    
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WP8T2VS4"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+<div id="page-loader">
+  <img id="loader-logo" src="https://img.mentalpaz.com/fav.webp" alt="MentalPaz" />
+</div>
+
+<style>
+  #page-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color, #eaedf0);
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.4s ease;
+  }
+  #page-loader.fade-out {
+    opacity: 0;
+    pointer-events: none;
+  }
+  #loader-logo {
+    width: 150px;
+    height: 150px;
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(0.95); }
+  }
+</style>
+
+<script>
+  window.addEventListener('load', function() {
+    var loader = document.getElementById('page-loader');
+    loader.classList.add('fade-out');
+    setTimeout(function() { loader.style.display = 'none'; }, 400);
+  });
+</script>
+
   
   
 <script>
@@ -914,16 +940,17 @@ MentalPaz Therapy and Wellness
             Cal("init", "free-consultation", {origin:"https://app.cal.com"});
         }
 
-        const contactSection = document.getElementById('contact');
+                const contactSection = document.getElementById('contact');
         if (contactSection) {
             const observer = new IntersectionObserver((entries) => {
                 if (entries[0].isIntersecting) {
                     loadCal();
                     observer.disconnect();
                 }
-            }
+            });
             observer.observe(contactSection);
-        })
+        }
+
 
         window.addEventListener('load', () => {
             setTimeout(() => loadCal(), 3000);
@@ -1070,7 +1097,7 @@ MentalPaz Therapy and Wellness
         <div class="col-md-4 text-center">
             
                 <div class="pb-2">
-                    <a href="https://mentalpaz.com/" title="MentalPaz Therapy and Wellness">
+                    <a href="http://localhost:1313/" title="MentalPaz Therapy and Wellness">
                         <img alt="Footer logo" src="https://img.mentalpaz.com/fav.webp"
                             height="40px" width="40px">
                     </a>
