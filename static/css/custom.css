@@ -221,3 +221,8 @@ h1, h2, h3, h4, h5, h6, p, a, li, span, div, button, input, textarea, label {
 #projects .card-text {
     font-weight: 400 !important;
 }
+
+/* Lazy load project images */
+#projects .card img {
+    content-visibility: auto;
+}

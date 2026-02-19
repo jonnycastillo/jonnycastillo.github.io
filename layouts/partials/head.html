@@ -3,12 +3,18 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
 
+
 <!-- SEO Meta Tags -->
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
 {{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
 <link rel="canonical" href="{{ .Permalink }}">
 
 <link rel="icon" href={{ .Site.Params.favicon | default "/fav.png" }} type="image/gif">
+<link rel="preload" as="image"
+  href="https://img.mentalpaz.com/images/hero.webp"
+  imagesrcset="https://img.mentalpaz.com/images/hero-mobile.webp 600w, https://img.mentalpaz.com/images/hero.webp 1200w"
+  imagesizes="(max-width: 768px) 100vw, 50vw"
+  fetchpriority="high">
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
