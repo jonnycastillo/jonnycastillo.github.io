@@ -808,15 +808,19 @@ MentalPaz Therapy and Wellness
                     
                     
                     <div class="text-center pt-3 pb-4">
-                        <a 
-                            href='
-                                    mailto:mentalpaztherapy@gmail.com
-                                  '
-                            target="_blank"
+                        
+                        <button 
                             class="btn"
+                            onclick="navigator.clipboard.writeText('mentalpaztherapy@gmail.com').then(function() {
+                                var btn = document.activeElement;
+                                var original = btn.textContent;
+                                btn.textContent = 'Email Copied!';
+                                setTimeout(function() { btn.textContent = original; }, 2000);
+                            })"
                         >
                             Send me a message
-                        </a>
+                        </button>
+                        
                     </div>
                     
                     

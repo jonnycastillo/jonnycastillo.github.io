@@ -446,7 +446,8 @@ params:
     title: "Find Your Peace"
     content: Schedule a consultation today! </br></br>Proudly serving clients throughout the state of California!</br></br>Therapy with me is collaborative. You don’t have to figure it out alone. </br></br>If you can't find any appointment slots, send me a message and let me know your availability.</br>
     btnName: "Send me a message"
-    btnLink: "mailto:mentalpaztherapy@gmail.com"
+    email: mentalpaztherapy@gmail.com
+    #btnLink: 
     # formspree:
     #   enable: true # `contact.email` value will be ignored
     #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'

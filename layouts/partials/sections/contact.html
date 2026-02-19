@@ -10,17 +10,27 @@
                     <!-- BUTTON MOVED HERE - BEFORE CAL EMBED -->
                     {{ if or (.Site.Params.contact.email) (.Site.Params.contact.btnLink) }}
                     <div class="text-center pt-3 pb-4">
+                        {{ if .Site.Params.contact.btnLink }}
                         <a 
-                            href='{{ if .Site.Params.contact.btnLink }}
-                                    {{ .Site.Params.contact.btnLink | default "#" }}
-                                  {{ else }}
-                                    mailto:{{ .Site.Params.contact.email }}
-                                  {{ end }}'
+                            href="{{ .Site.Params.contact.btnLink }}"
                             target="_blank"
                             class="btn"
                         >
                             {{ .Site.Params.contact.btnName | default "Get in Touch" }}
                         </a>
+                        {{ else }}
+                        <button 
+                            class="btn"
+                            onclick="navigator.clipboard.writeText('{{ .Site.Params.contact.email }}').then(function() {
+                                var btn = document.activeElement;
+                                var original = btn.textContent;
+                                btn.textContent = 'Email Copied!';
+                                setTimeout(function() { btn.textContent = original; }, 2000);
+                            })"
+                        >
+                            {{ .Site.Params.contact.btnName | default "Send me a message" }}
+                        </button>
+                        {{ end }}
                     </div>
                     {{ end }}
                     
