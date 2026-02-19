@@ -46,11 +46,11 @@
 {{- else -}}
 <link rel="stylesheet" href="{{ .Site.Params.staticPath }}/bootstrap-5/css/bootstrap.min.css" media="all">
 {{- end -}}
-<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/header.css" media="all">
-<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/footer.css" media="all">
+<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/header.css" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/footer.css" media="print" onload="this.media='all'">
 
 <!-- theme -->
-<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/theme.css" media="all">
+<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/theme.css" media="print" onload="this.media='all'">
 
 <style>
     :root {
@@ -106,6 +106,6 @@
 </style>
 
 <!-- Custom CSS overrides -->
-<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/custom.css" media="all">
+<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/custom.css" media="print" onload="this.media='all'">
 
 {{ partial "head/extensions.html" . }}
