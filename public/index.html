@@ -807,22 +807,53 @@ MentalPaz Therapy and Wellness
                     
                     
                     
-                    <div class="text-center pt-3 pb-4">
-                        
-                        <button 
-                            class="btn"
-                            onclick="navigator.clipboard.writeText('mentalpaztherapy@gmail.com').then(function() {
-                                var btn = document.activeElement;
-                                var original = btn.textContent;
-                                btn.textContent = 'Email Copied!';
-                                setTimeout(function() { btn.textContent = original; }, 2000);
-                            })"
-                        >
-                            Send me a message
-                        </button>
-                        
-                    </div>
-                    
+<div class="text-center pt-3 pb-4">
+    
+    <button 
+        class="btn"
+        onclick="
+            try { 
+                navigator.clipboard.writeText('mentalpaztherapy@gmail.com');
+                var toast = document.getElementById('email-toast');
+                toast.classList.add('show');
+                setTimeout(function() { toast.classList.remove('show'); }, 2000);
+            } catch(e) { 
+                window.location.href = 'mailto:mentalpaztherapy@gmail.com'; 
+            }
+        "
+    >
+        Send me a message
+    </button>
+
+    
+    <div id="email-toast">Email copied to clipboard!</div>
+
+    <style>
+        #email-toast {
+            visibility: hidden;
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            border-radius: 2rem;
+            padding: 12px 24px;
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 9999;
+            font-size: 0.9rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            white-space: nowrap;
+        }
+        #email-toast.show {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+    
+</div>
+
                     
                         
     <div style="width:100%;min-height:700px;height:auto;overflow:visible" id="my-cal-inline-free-consultation"></div>
