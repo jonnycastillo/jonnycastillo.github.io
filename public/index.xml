@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MentalPaz Therapy and Wellness</title>
-    <link>http://localhost:1313/</link>
+    <link>https://mentalpaz.com/</link>
     <description>Recent content on MentalPaz Therapy and Wellness</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 17 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mentalpaz.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Privacy Policy</title>
-      <link>http://localhost:1313/privacy-policy/</link>
+      <link>https://mentalpaz.com/privacy-policy/</link>
       <pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/privacy-policy/</guid>
+      <guid>https://mentalpaz.com/privacy-policy/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Effective Date:&lt;/strong&gt; [February 17, 2026]&lt;br&gt;&#xA;&lt;strong&gt;Website:&lt;/strong&gt; mentalpaz.com&lt;br&gt;&#xA;&lt;strong&gt;Practice Location:&lt;/strong&gt; California, United States&lt;br&gt;&#xA;&lt;strong&gt;Contact:&lt;/strong&gt; [mentalpaztherapy@gmail.com]&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;legal-notice&#34;&gt;Legal Notice&lt;/h2&gt;&#xA;&lt;p&gt;This Privacy Policy is provided for general informational purposes only and is not intended as legal advice. It is designed to explain, in clear language, how information is handled on this website.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-information-we-collect&#34;&gt;1. Information We Collect&lt;/h2&gt;&#xA;&lt;h3 id=&#34;information-you-choose-to-share&#34;&gt;Information You Choose to Share&lt;/h3&gt;&#xA;&lt;p&gt;When you use this website, you may voluntarily provide limited personal information, such as:&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Guide to Finding the Right Therapist</title>
-      <link>http://localhost:1313/blogs/guide-to-finding-a-therapist/</link>
+      <link>https://mentalpaz.com/blogs/guide-to-finding-a-therapist/</link>
       <pubDate>Fri, 30 Jan 2026 10:00:00 -0800</pubDate>
-      <guid>http://localhost:1313/blogs/guide-to-finding-a-therapist/</guid>
+      <guid>https://mentalpaz.com/blogs/guide-to-finding-a-therapist/</guid>
       <description>&lt;p&gt;Finding a therapist can feel surprisingly hard. Even when you &lt;em&gt;know&lt;/em&gt; you want support, the process of searching, comparing, and reaching out can bring up overwhelm, self-doubt, and hesitation. If you’ve ever thought, &lt;em&gt;Why does this feel so complicated?&lt;/em&gt; — you’re not alone.&lt;/p&gt;&#xA;&lt;p&gt;This guide is not meant to be comprehensive, but my attempt at easing some of the overwhelming thoughts around choosing a therapist. One thing is for sure, you don’t need to get it perfect. You just need a starting point.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Free Consultation</title>
-      <link>http://localhost:1313/free-consultation/</link>
+      <link>https://mentalpaz.com/free-consultation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/free-consultation/</guid>
+      <guid>https://mentalpaz.com/free-consultation/</guid>
       <description></description>
     </item>
     <item>
       <title>Thank You for Booking</title>
-      <link>http://localhost:1313/thank-you/</link>
+      <link>https://mentalpaz.com/thank-you/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/thank-you/</guid>
+      <guid>https://mentalpaz.com/thank-you/</guid>
       <description>&lt;h1 id=&#34;your-appointment-is-successfully-scheduled&#34;&gt;Your appointment is successfully scheduled!&lt;/h1&gt;&#xA;&lt;p&gt;Thank you for booking, I&amp;rsquo;m looking forward to speaking with you!&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-happens-next&#34;&gt;What Happens Next?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Please be ready to receive a phone call at your scheduled appointment time.&lt;/strong&gt; I&amp;rsquo;ll call you directly on the phone number you provided.&lt;/p&gt;&#xA;&lt;h3 id=&#34;before-your-consultation&#34;&gt;Before Your Consultation:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Check Your Email&lt;/strong&gt; - You should receive a confirmation email with your appointment details&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Be in a Quiet Space&lt;/strong&gt; - Find a comfortable, private location where we can talk freely&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Have Your Questions Ready&lt;/strong&gt; - Think about what you&amp;rsquo;d like to discuss during our time together&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Test Your Phone&lt;/strong&gt; - Make sure your phone is charged and has good reception&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;need-to-reschedule&#34;&gt;Need to Reschedule?&lt;/h3&gt;&#xA;&lt;p&gt;If something comes up and you need to change your appointment time, you can reschedule using the link in your confirmation email.&lt;/p&gt;</description>
     </item>
   </channel>
