@@ -76,7 +76,7 @@ params:
   description: "Online therapy for women and ADHDers in their 20s and 30s. LMFT Nicole Castillo provides culturally aware, trauma-informed therapy throughout California."
   keywords: "online therapy California, ADHD therapy, women's mental health, Latina therapist, anxiety therapy, trauma therapy, LMFT" 
   # staticPath: ""  # The path to serve the static files from
-  favicon: "/fav.png"
+  favicon: "https://img.mentalpaz.com/fav.webp"
   partners:
   - name: "Aetna"
     logo: "/images/logos/aetna.png"
@@ -172,7 +172,7 @@ params:
     title: "Online therapy for women and ADHDers."
     subtitle:
     content: You deserve some&nbsp;<br class="d-block d-md-none">mental peace.
-    image: /images/hero.jpeg
+    image: https://img.mentalpaz.com/images/hero.webp
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
@@ -196,7 +196,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/fav.png"
+    image: "https://img.mentalpaz.com/fav.webp"
     content: |-
       **I'm Nicole Castillo, MA LMFT**—founder of MentalPaz, Latina therapist, new mama, and young breast cancer survivor who gets what it's like to balance identity, ambition, and healing. <br><br>With over a decade of experience, I couldn’t be more passionate about working in solidarity with my clients. <br><br>
     skills:
@@ -212,7 +212,7 @@ params:
 
   approach:
     enable: true
-    title: Your mind never<br>stops running, yet you<br>still feel “behind.”
+    title: Your&nbsp;mind&nbsp;never<br>stops&nbsp;running,&nbsp;yet&nbsp;you<br>still&nbsp;feel&nbsp;“behind.”
     btnName: ""
     btnLink: ""
     image: ""
@@ -400,7 +400,7 @@ params:
 
       - title: Let's Connect...
         content: Schedule a free consultation to explore how I can support you.
-        image: /images/projects/connect.jpg
+        image: https://img.mentalpaz.com/images/projects/connect.webp
         # featured:
         #   name: Demo V2
         #   link: https://hugo-profile-2.netlify.app
@@ -414,7 +414,7 @@ params:
 
       - title: Unpack It Together
         content: I'll be your grounded, compassionate ally as we explore what's weighing you down and discover pathways to peace.
-        image: /images/projects/unpack.jpg
+        image: https://img.mentalpaz.com/images/projects/unpack.webp
         # featured:
         #   name: Demo V2
         #   link: https://hugo-profile-2.netlify.app
@@ -428,7 +428,7 @@ params:
 
       - title: Feel More At Peace
         content: With personalized support, you'll feel more grounded and at ease in your daily life.
-        image: /images/projects/paz.jpg
+        image: https://img.mentalpaz.com/images/projects/paz.webp
         # featured:
         #   name: Demo V2
         #   link: https://hugo-profile-2.netlify.app
