@@ -34,7 +34,7 @@
    
   <!-- Loading screen -->
 <div id="page-loader">
-  <<img id="loader-logo" src="/fav.png" alt="MentalPaz" />
+  <img id="loader-logo" src="/fav.png" alt="MentalPaz" />
 </div>
 
 <style>
@@ -67,10 +67,25 @@
 </style>
 
 <script>
+  var loaderDone = false;
+  var pageDone = false;
+
+  function tryHideLoader() {
+    if (loaderDone && pageDone) {
+      var loader = document.getElementById('page-loader');
+      loader.classList.add('fade-out');
+      setTimeout(function() { loader.style.display = 'none'; }, 400);
+    }
+  }
+
+  setTimeout(function() {
+    loaderDone = true;
+    tryHideLoader();
+  }, 1250);
+
   window.addEventListener('load', function() {
-    var loader = document.getElementById('page-loader');
-    loader.classList.add('fade-out');
-    setTimeout(function() { loader.style.display = 'none'; }, 400);
+    pageDone = true;
+    tryHideLoader();
   });
 </script>
 

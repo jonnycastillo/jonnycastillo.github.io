@@ -1,19 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  
-  
-  <script>
-    window.addEventListener('load', function() {
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-WP8T2VS4');
-    });
-  </script>
-  
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -33,7 +21,7 @@ This Privacy Policy is provided for general informational purposes only and is n
 Information You Choose to Share
 When you use this website, you may voluntarily provide limited personal information, such as:">
 <meta name="keywords" content="online therapy California, ADHD therapy, women&#39;s mental health, Latina therapist, anxiety therapy, trauma therapy, LMFT">
-<link rel="canonical" href="https://mentalpaz.com/privacy-policy/">
+<link rel="canonical" href="http://localhost:1313/privacy-policy/">
 
 <link rel="icon" href="https://img.mentalpaz.com/fav.webp" type="image/gif">
 <link rel="preload" as="image"
@@ -60,7 +48,7 @@ When you use this website, you may voluntarily provide limited personal informat
 
 
 
-<meta property="og:url" content="https://mentalpaz.com/privacy-policy/">
+<meta property="og:url" content="http://localhost:1313/privacy-policy/">
   <meta property="og:site_name" content="MentalPaz Therapy and Wellness">
   <meta property="og:title" content="Privacy Policy">
   <meta property="og:description" content="Effective Date: [February 17, 2026]
@@ -157,8 +145,8 @@ Legal Notice This Privacy Policy is provided for general informational purposes 
       "@type": "ProfessionalService",
       "name": "MentalPaz Therapy and Wellness",
       "description": "Online therapy for women and ADHDers in their 20s and 30s",
-      "url": "https:\/\/mentalpaz.com\/",
-      "image": "https:\/\/mentalpaz.com\/images/hero.jpeg",
+      "url": "http:\/\/localhost:1313\/",
+      "image": "http:\/\/localhost:1313\/images/hero.jpeg",
       "telephone": "+1-949-478-1757",
       "areaServed": {
         "@type": "State",
@@ -199,7 +187,7 @@ Privacy Policy | MentalPaz Therapy and Wellness
    
   
 <div id="page-loader">
-  &lt;<img id="loader-logo" src="/fav.png" alt="MentalPaz" />
+  <img id="loader-logo" src="/fav.png" alt="MentalPaz" />
 </div>
 
 <style>
@@ -232,18 +220,28 @@ Privacy Policy | MentalPaz Therapy and Wellness
 </style>
 
 <script>
+  var loaderDone = false;
+  var pageDone = false;
+
+  function tryHideLoader() {
+    if (loaderDone && pageDone) {
+      var loader = document.getElementById('page-loader');
+      loader.classList.add('fade-out');
+      setTimeout(function() { loader.style.display = 'none'; }, 400);
+    }
+  }
+
+  setTimeout(function() {
+    loaderDone = true;
+    tryHideLoader();
+  }, 1250);
+
   window.addEventListener('load', function() {
-    var loader = document.getElementById('page-loader');
-    loader.classList.add('fade-out');
-    setTimeout(function() { loader.style.display = 'none'; }, 400);
+    pageDone = true;
+    tryHideLoader();
   });
 </script>
 
-  
-  
-   
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WP8T2VS4"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
   
 <script>
@@ -641,7 +639,7 @@ Privacy Policy | MentalPaz Therapy and Wellness
         <div class="col-md-4 text-center">
             
                 <div class="pb-2">
-                    <a href="https://mentalpaz.com/" title="MentalPaz Therapy and Wellness">
+                    <a href="http://localhost:1313/" title="MentalPaz Therapy and Wellness">
                         <img alt="Footer logo" src="https://img.mentalpaz.com/fav.webp"
                             height="40px" width="40px">
                     </a>
