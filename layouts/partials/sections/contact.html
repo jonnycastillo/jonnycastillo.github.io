@@ -90,12 +90,12 @@
                     loadCal();
                     observer.disconnect();
                 }
-            }, { rootMargin: '300px' });
+            }, { rootMargin: '100px' });
             observer.observe(contactSection);
         }
 
         window.addEventListener('load', () => {
-            setTimeout(() => loadCal(), 1000);
+            setTimeout(() => loadCal(), 3000);
         });
 
         window.updateCalTheme = function() {
