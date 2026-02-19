@@ -124,16 +124,17 @@
             Cal("init", "free-consultation", {origin:"https://app.cal.com"});
         }
 
-        const contactSection = document.getElementById('contact');
+                const contactSection = document.getElementById('contact');
         if (contactSection) {
             const observer = new IntersectionObserver((entries) => {
                 if (entries[0].isIntersecting) {
                     loadCal();
                     observer.disconnect();
                 }
-            }//, { rootMargin: '100px' });
+            });
             observer.observe(contactSection);
-        })
+        }
+
 
         window.addEventListener('load', () => {
             setTimeout(() => loadCal(), 3000);
