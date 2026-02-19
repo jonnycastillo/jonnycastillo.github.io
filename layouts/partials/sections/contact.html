@@ -34,8 +34,6 @@
         }
 
         function initializeCal() {
-            console.log("initializeCal called");
-            console.log("Cal available:", typeof Cal);
             Cal("init", "free-consultation", {origin:"https://app.cal.com"});
             Cal.ns["free-consultation"]("inline", {
                 elementOrSelector:"#my-cal-inline-free-consultation",
@@ -43,33 +41,51 @@
                 calLink: "nicole-castillo-6d6omw/free-consultation",
             });
             Cal.ns["free-consultation"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
-            console.log("initializeCal complete");
         }
 
         function loadCal() {
-            console.log("loadCal called, calLoaded:", calLoaded);
             if (calLoaded) return;
             calLoaded = true;
 
-            const s = document.createElement("script");
-            s.src = "https://app.cal.com/embed/embed.js";
-            s.async = true;
-            s.onload = function() {
-                console.log("embed.js loaded");
-                initializeCal();
-            };
-            s.onerror = function() {
-                console.log("embed.js FAILED to load");
-            };
-            document.head.appendChild(s);
+            // Set up Cal's global queue BEFORE loading the script
+            (function (C, A, L) {
+                let p = function (a, ar) { a.q.push(ar); };
+                let d = C.document;
+                C.Cal = C.Cal || function () {
+                    let cal = C.Cal;
+                    let ar = arguments;
+                    if (!cal.loaded) {
+                        cal.ns = {};
+                        cal.q = cal.q || [];
+                        let s = d.createElement("script");
+                        s.src = A;
+                        s.async = true;
+                        s.onload = function() { initializeCal(); };
+                        d.head.appendChild(s);
+                        cal.loaded = true;
+                    }
+                    if (ar[0] === L) {
+                        const api = function () { p(api, arguments); };
+                        const namespace = ar[1];
+                        api.q = api.q || [];
+                        if (typeof namespace === "string") {
+                            cal.ns[namespace] = cal.ns[namespace] || api;
+                            p(cal.ns[namespace], ar);
+                            p(cal, ["initNamespace", namespace]);
+                        } else p(cal, ar);
+                        return;
+                    }
+                    p(cal, ar);
+                };
+            })(window, "https://app.cal.com/embed/embed.js", "init");
+
+            // Now trigger Cal which kicks off the script load
+            Cal("init", "free-consultation", {origin:"https://app.cal.com"});
         }
 
         const contactSection = document.getElementById('contact');
-        console.log("contactSection found:", !!contactSection);
-
         if (contactSection) {
             const observer = new IntersectionObserver((entries) => {
-                console.log("IntersectionObserver fired, isIntersecting:", entries[0].isIntersecting);
                 if (entries[0].isIntersecting) {
                     loadCal();
                     observer.disconnect();
@@ -79,7 +95,6 @@
         }
 
         window.addEventListener('load', () => {
-            console.log("window load fired");
             setTimeout(() => loadCal(), 1000);
         });
 
