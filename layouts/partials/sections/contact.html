@@ -36,7 +36,7 @@
     </button>
 
     <!-- Toast notification -->
-    <div id="email-toast">Email copied to clipboard!</div>
+    <div id="email-toast">Email Copied!</div>
 
     <style>
         #email-toast {
@@ -131,7 +131,7 @@
                     loadCal();
                     observer.disconnect();
                 }
-            }, { rootMargin: '100px' });
+            }//, { rootMargin: '100px' });
             observer.observe(contactSection);
         }
 
