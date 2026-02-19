@@ -40,26 +40,22 @@
 
     <style>
         #email-toast {
-            visibility: hidden;
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            border-radius: 2rem;
-            padding: 12px 24px;
-            position: fixed;
-            bottom: 2rem;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 9999;
-            font-size: 0.9rem;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            white-space: nowrap;
-        }
-        #email-toast.show {
-            visibility: visible;
-            opacity: 1;
-        }
+    visibility: hidden;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-align: center;
+    border-radius: 2rem;
+    padding: 12px 24px;
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+}
     </style>
     {{ end }}
 </div>
