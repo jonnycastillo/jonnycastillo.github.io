@@ -95,13 +95,23 @@ h1, h2, h3, h4, h5, h6, p, a, li, span, div, button, input, textarea, label {
 /* approach section - contact layout with hero text styling */
 
 #approach .subtitle {
-    font-size: clamp(14px,5vw,16px);
+    font-size: clamp(14px, 5vw, 16px);
     opacity: 0.6;
 }
 
+/* Responsive quote heading — scales with viewport, never overflows */
 #approach h1 {
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: clamp(1.4rem, 7.8vw, 2.3rem) !important;
     color: var(--primary-color) !important;
+    word-break: keep-all;
+    overflow-wrap: normal;
+}
+
+/* Mobile: constrain to safe size accounting for container padding */
+@media (max-width: 480px) {
+    #approach h1 {
+        font-size: 6.2vw !important;
+    }
 }
 
 #approach p {
@@ -140,10 +150,10 @@ h1, h2, h3, h4, h5, h6, p, a, li, span, div, button, input, textarea, label {
     transform: none !important;
 }
 
-/* Increase font size in approach section */
+/* Hero section paragraph */
 
 #hero p {
-    font-size: 1.7rem;  /* Adjust this value as needed */
+    font-size: 1.7rem;
     margin: 20px 0px 0px;
     max-width: 640px;
     opacity: 0.5 !important;
@@ -153,12 +163,6 @@ h1, h2, h3, h4, h5, h6, p, a, li, span, div, button, input, textarea, label {
     font-weight: 500;
     opacity: 0.9 !important;
     line-height: 1.7rem !important;
-}
-
-
-#approach h1 {
-    font-size: 2.3rem !important;  /* Adjust these values as needed */
-    color: var(--primary-color) !important;
 }
 
 /* Add padding to approach section - match about section margin */
@@ -191,7 +195,7 @@ h1, h2, h3, h4, h5, h6, p, a, li, span, div, button, input, textarea, label {
         margin-right: auto;
         width: fit-content;
     }
-    
+
     /* Hero content paragraph less bold on mobile */
     #hero .content p {
         font-weight: 400 !important;
@@ -219,4 +223,9 @@ h1, h2, h3, h4, h5, h6, p, a, li, span, div, button, input, textarea, label {
 
 #projects .card-text {
     font-weight: 400 !important;
+}
+
+/* Lazy load project images */
+#projects .card img {
+    content-visibility: auto;
 }

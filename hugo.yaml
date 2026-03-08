@@ -444,8 +444,8 @@ params:
   contact:
     enable: true
     title: "Find Your Peace"
-    content: Schedule a consultation today! </br></br>Proudly serving clients throughout the state of California!</br></br>Therapy with me is collaborative. You don’t have to figure it out alone. </br></br>If you can't find any appointment slots, send me a message and let me know your availability.</br>
-    btnName: "Send me a message"
+    content: Schedule a consultation today! </br></br>Proudly serving clients throughout the state of California!</br></br>Therapy with me is collaborative. You don’t have to figure it out alone. </br></br>If you can't find any appointment slots, click the button below to copy my email and send me a message with your availability.</br>
+    btnName: "Copy My Email"
     email: mentalpaztherapy@gmail.com
     #btnLink: 
     # formspree:
