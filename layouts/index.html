@@ -3,8 +3,11 @@
 <link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/index.css" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/projects.css" media="print" onload="this.media='all'">
 
+<!-- fontawesome old
+<script defer src="{{ .Site.Params.staticPath }}/fontawesome-6/all-6.4.2.js"></script>-->
 <!-- fontawesome -->
-<script defer src="{{ .Site.Params.staticPath }}/fontawesome-6/all-6.4.2.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" media="print" onload="this.media='all'" crossorigin="anonymous">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous"></noscript>
 {{ end }}
 
 {{ define "title" }}

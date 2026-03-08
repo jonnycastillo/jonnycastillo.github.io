@@ -134,7 +134,7 @@ This Privacy Policy may be updated periodically. Changes will be posted on this 
 
 ## 10. Contact
 
-If you have questions about this Privacy Policy, please contact: [your email address]
+If you have questions about this Privacy Policy, please contact: [mentalpaztherapy@gmail.com]
 
 ---
 

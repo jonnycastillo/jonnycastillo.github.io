@@ -76,7 +76,7 @@ params:
   description: "Online therapy for women and ADHDers in their 20s and 30s. LMFT Nicole Castillo provides culturally aware, trauma-informed therapy throughout California."
   keywords: "online therapy California, ADHD therapy, women's mental health, Latina therapist, anxiety therapy, trauma therapy, LMFT" 
   # staticPath: ""  # The path to serve the static files from
-  favicon: "https://img.mentalpaz.com/fav.webp"
+  favicon: "https://img.mentalpaz.com/fav-small.webp"
   partners:
   - name: "Aetna"
     logo: "/images/logos/aetna.png"
