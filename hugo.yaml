@@ -69,6 +69,8 @@ Menus:
     #   weight: 2
 
 params:
+  images:
+    - "https://img.mentalpaz.com/images/hero.webp"
   enableCal: true
   enableGTM: true
   gtmID: "GTM-WP8T2VS4"
